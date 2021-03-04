@@ -166,13 +166,14 @@ a {
 
 /*Header*/
 .header {
-  margin-top: 6rem;
+  margin-top: 4.4rem;
   position: relative;
   z-index: -1;
 }
 
 .header img {
   width: 100%;
+  height: 500px;
   -webkit-mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 1),
@@ -210,7 +211,7 @@ a {
 
 /*Products*/
 .products {
-  margin-top: -200px;
+  margin-top: -250px;
   z-index: 1;
 }
 .container-row-1 {
@@ -301,7 +302,7 @@ a {
   display: inline-block;
   position: relative;
   padding: 0.5rem 6rem;
-  width: 50%;
+  width: 100%;
   margin: auto;
   margin-top: 1.5rem;
   font-size: 1.6rem;
@@ -315,11 +316,11 @@ a {
 }
 
 .container-row-2 .addtoCart {
-  width: 70%;
+  width: 100%;
 }
 
 .container-row-3 .addtoCart {
-  width: 90%;
+  width: 100%;
 }
 
 .addtoCart:hover {
@@ -445,6 +446,192 @@ a {
   background: linear-gradient(to top, #f6c88f, #ed9220);
 }
 
+/*Login*/
+.login_wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_logo {
+  text-align: center;
+  padding: .5rem 1rem;
+}
+
+.login_logo img {
+  width: 130px;
+}
+
+.login_form {
+  width: 35%;
+  margin-top: 2rem;
+  border: 1px solid rgba(0, 0, 0, .13);
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.login_form h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.login-form_content {
+  margin-top: 2rem;
+}
+
+.login-form_content label {
+  display: block;
+  font-size: 1.3rem;
+}
+
+.login-form_content input {
+  margin: .5rem 0 .7rem;
+  padding: .7rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+  width: 100%;
+}
+
+.login-form_content input:focus {
+  box-shadow: 0 0 4px 2px #ed9220;
+  border: 1px solid #ed9220;
+}
+
+.conditions, .help {
+  margin: 1rem 0
+}
+
+.conditions a, .help a {
+  color: #0066C0;
+}
+
+.help a{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.loginBtn {
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem 6rem;
+  width: 100%;
+  margin: auto;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #0f1111;
+  background: linear-gradient(to bottom, #f6c88f, #ed9220);
+  outline: none;
+  border: 1px solid #be751a;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.loginBtn:hover {
+  background: linear-gradient(to bottom, #ed9220, #f6c88f);
+}
+
+.signup-link {
+  margin: 2rem 0;
+  width: 35%;
+  text-align: center;
+}
+
+.signup-link p {
+  color: #767676;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.signup-link p::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 35%;
+  height: 1px;
+  background: #DFE2E7;
+}
+
+.signup-link p::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 35%;
+  height: 1px;
+  background: #DFE2E7;
+}
+
+.signup-link a {
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem 6rem;
+  width: 100%;
+  margin: auto;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #0f1111;
+  background: #eee;
+  outline: none;
+  border: 1px solid #979AA1;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.signup-link a:hover {
+  background: #DFE2E7;
+}
+
+.policies {
+  width: 30%;
+  margin: 1rem 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.policies a {
+  color: #0066C0;
+}
+
+
+.login_footer p {
+  color: #767676;
+  margin-top: .5rem;
+  font-weight: 500;
+}
+
+#pass_span span {
+  color: #0066C0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-right: 1rem;
+  font-style: italic;
+}
+
+.already {
+  margin-top: 2rem;
+}
+
+.already p {
+  font-size: 1.1rem;
+}
+
+.already a {
+  color: #0066C0;
+}
+
 /*Media Queries*/
 @media screen and (max-width: 1266px) {
   .searchBar {
@@ -512,6 +699,10 @@ a {
   .cart-items-info .card-title {
     width: 100%;
   }
+
+  .prev img, .next img {
+    top: 5%;
+  }
 }
 
 @media screen and (max-width: 748px) {
@@ -536,7 +727,7 @@ a {
   }
 
   .header {
-    margin-top: 4.4rem;
+    margin-top: 2.7rem;
   }
 
   .cart-wrapper {
@@ -549,6 +740,13 @@ a {
 
   .cart-total {
     margin-top: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 770px) {
+  .login_form, .signup-link, .policies {
+    width: 50%;
   }
 }
 
@@ -590,4 +788,22 @@ a {
     font-size: 1.3rem;
     width: 70% !important;
   }
+
+  .prev img, .next img {
+    top: 3%;
+  }
+
+  .prev img {
+    left: 0;
+  }
+
+  .next img {
+    right: 0;
+  }
+
+  .login_form, .signup-link, .policies {
+    width: 95%;
+  }
+
+  
 }
