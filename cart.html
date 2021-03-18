@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Amazon Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!--Navbar-->
+    <div class="navbar">
+        <div class="branding">
+            <a href="index.html">
+                <img src="img/logo.png" alt="">
+            </a>
+           <div class="selectAddress">
+            <a href="#" id="map-marker">
+                <i class="fa fa-map-marker"></i>
+                <div>
+                    <span id="hello">Hello,</span>
+                    <span><strong>Select your address</strong></span>
+                </div>
+            </a>
+           </div>
+        </div>
+        <div class="searchBar">
+           <div class="form-wrap">
+            <input type="text" name="search" placeholder="Search a product...">
+            <button class="btn"><i class="fa fa-search"></i></button>
+           </div>
+        </div>
+        <div class="navOptions">
+            <div>
+                <span id="hello">Hello,</span>
+                <span id="id"><a href="login.html"><strong>Sign In</strong></a></span>
+            </div>
+            <div>
+               <a href="#">
+                <span id="returns">Returns</span>
+                <span id="orders"><strong>& Orders</strong></span>
+               </a>
+            </div>
+            <div>
+                <a href="#">
+                    <i class="fa fa-shopping-cart"> 0</i>
+                </a>
+            </div>
+        </div>
+        <a class="menuBar" href="#"><i class="fa fa-bars"></i></a>
+    </div>
+
+    <!--Cart Section-->
+    <section class="cart">
+        <h1>Your Cart</h1>
+        <div class="cart-wrapper">            
+            <div class="cart-items">
+                <div class="cart-items-inner">
+                    <img src="img/prod3.jpg" alt="">
+                    <div class="cart-items-info">
+                        <div class="card-title">(Renewed) Logitech G Driving Force Shifter G Driving Force Shifter Joystick</div>
+                        <div class="price">Rs. 2400</div>
+                        <div class="quantity"><input type="number" step="1" value="1"></div>
+                        <div><a href="#" class="deleteBtn">Delete</a></div>
+                    </div>
+                </div>
+
+                <div class="cart-items-inner">
+                    <img src="img/prod4.jpg" alt="">
+                    <div class="cart-items-info">
+                        <div class="card-title">boAt Bassheads 100 in Ear Wired Earphones with Mic(Black)</div>
+                        <div class="price">Rs. 379</div>
+                        <div class="quantity"><input type="number" step="1" value="1"></div>
+                        <div><a href="#" class="deleteBtn">Delete</a></div>
+                    </div>
+                </div>
+
+                <div class="cart-items-inner">
+                    <img src="img/prod4.jpg" alt="">
+                    <div class="cart-items-info">
+                        <div class="card-title">boAt Bassheads 100 in Ear Wired Earphones with Mic(Black)</div>
+                        <div class="price">Rs. 379</div>
+                        <div class="quantity"><input type="number" step="1" value="1"></div>
+                        <div><a href="#" class="deleteBtn">Delete</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <div class="cart-total-wrapper">
+                    <div class="total-info">
+                        <h2>Subtotal : </h2>
+                        <p>Products Total : </p>
+                        <p>Discount (if any) : </p>
+                        <p>Delivery Charge : </p>
+                        <h2>Grand Total : </h2>
+                    </div>
+                    <div class="total-value">
+                        <h2>Rs. 2779</h2>
+                        <p>Rs. 2779</p>
+                        <p>Rs. 50</p>
+                        <p>Rs. 70</p>
+                        <h2>Rs. 2799</h2>
+                    </div>
+                </div>
+                <a href="#" class="proceedtoPay deleteBtn">Proceed to Pay</a>
+            </div>
+        </div>
+    </section>
+
+    </div>
+</body>
+</html>
